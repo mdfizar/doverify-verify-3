@@ -107,10 +107,23 @@ const imgViewBox = document.querySelector(".product-img-gellary")
 const btnNex = document.querySelector(".btn-next");
 const btnPrev = document.querySelector(".btn-prev");
 
+// hide the slider arrow 
+btnNex.style.opacity ="0";
+btnPrev.style.opacity ="0";
+
+// set the cursor zoom-in 
 imgViewBox.style.cursor = "zoom-in";
 
 function showImgViewBox() {
-  imgViewBox.style.position = "absolute";
+  btnNex.style.opacity ="1";
+  btnPrev.style.opacity ="1";
+  if(imgViewBox.style.position === "static") {
+    imgViewBox.style.position = "absolute";
+    imgViewBox.style.cursor = "zoom-out";
+  } else{
+    imgViewBox.style.position = "static";
+    imgViewBox.style.cursor = "zoom-in";
+  }
 }
 
 function hideImgViewBox() {
@@ -138,5 +151,18 @@ document.addEventListener('click', (event) => {
 });
 
 //  verify popup 
+const verifyBtn = document.querySelectorAll(".verify-btn");
+const verifyPopup = genuinSction.querySelector(".verify-popup");
+const verifyPopupClose = genuinSction.querySelector(".verify-popup-close-btn");
+
+verifyBtn.forEach(btn => {
+  btn.addEventListener('click', () => {
+    verifyPopup.style.transform ="translateX(0%)";
+  });
+});
+verifyPopupClose.addEventListener('click', () => {
+  verifyPopup.style.transform ="translateX(-100%)";
+})
+
 
 

@@ -77,6 +77,8 @@ body {
 .nfc_tag{
   color: #fff;
   text-align: center;
+  height: 243px;
+  overflow-y: auto;
 }
 .nfc_tag h4{
   font-size: 20px;
@@ -172,7 +174,7 @@ body {
 }
 .product-detail-item {
   background: linear-gradient(73deg, rgb(233 252 255 / 70%) -2.78%, hsl(104.86deg 14.02% 86.26% / 70%) 64.5%, #f6c3c3 111.91%);
-  height: 420px;
+  height: 528px;
   overflow-Y: auto;
   display: flex;
   flex-direction: column;
@@ -202,7 +204,7 @@ body {
 } 
 /* begin product img slider  */
 .product-img-gellary {
-  top: 9px;
+  top: 26%;
   left: 0px;
   right: 0px;
   transition: all 0.4s ease-in-out;
@@ -378,8 +380,45 @@ body {
   font-size: 20px;
 }
 /* end product does't match  */
-
+/* begin verify popup  */
+.verify-popup {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  background: var(--verify-btn);
+  top: 50%;
+  text-align: center;
+  padding: 15px 0px;
+  transition: 0.6s ease-in-out;
+  transform: translateX(-100%);
+}
+.checkbox {
+  color: white;
+}
+.verify-input input {
+  outline: none;
+  padding: 4px 7px;
+  border: 1px solid #b7b7b7;
+  /* display: none; */
+}
+.verify-popup .popup-container {
+  position: relative;
+}
+.verify-popup .popup-container .verify-popup-close-btn {
+  position: absolute;
+  top: -43px;
+  right: 3px;
+  background: none;
+}
+/* end verify popup  */
 /* responsive  */
+/* sxtra small scree  */
+@media (max-width: 375px) {
+  .product-detail-item {
+    height: 273px;
+  }
+  
+}
 /* desktop screen  */
 @media (min-width: 768px) {
   .doverify-verificatoin-container,.no-product-container, 
@@ -396,5 +435,8 @@ body {
   /* imgView box  */
   .product-img-gellary {
     top: 19%;
+  }
+  .nfc_tag {
+    scrollbar-width: none;
   }
 }

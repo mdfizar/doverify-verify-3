@@ -26,7 +26,7 @@
             <div class="verify-icon mx-auto">
                <i class="fa-solid fa-check"></i>
             </div>
-            <h4 class="text-center text-light title-text my-3">Geneuin Product</h4>
+            <h4 class="text-center text-light title-text my-3">Genuine Product</h4>
                <div class="product-details-container">
                   <!-- begin nfc tag  -->
                    <div class="nfc_tag px-5 mt-4">
@@ -171,8 +171,32 @@
                      </div>
                   </div>
                </div>
+               <div style="transform: translateX(-100%);" class="verify-popup">
+                    <div class="popup-container py-5">
+                        <button class="verify-popup-close-btn border-0">
+                           <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <form action="">
+                           <div class="checkbox d-flex">
+                              <div class="sms-checkbox text-center w-50">
+                                 <input type="radio" id="sms" name="data">
+                              <label for="sms">SMS</label>
+                              </div>
+                              <div class="email-checkbox text-center w-50">
+                              <input type="radio" id="email" name="data">
+                              <label for="email">EMAIL</label>
+                              </div>
+                           </div>
+                           <div class="verify-input d-flex my-4">
+                              <input class="phone-input w-50 mx-2" type="tel">
+                              <input class="email-input w-50 mx-2" type="email">
+                           </div>
+                           <button class="px-4 py-2 border-0 rounded" type="submit">Verify</button>
+                        </form>
+                    </div>
+               </div>
             <div class="doverify-varificaton-footer text-center">
-               <button>Click to Verify
+               <button class="verify-btn">Click to Verify
                <i class="fa-solid fa-check"></i>
                </button>
             </div>
@@ -303,7 +327,7 @@
                </div>
             </div>
             <div class="doverify-varificaton-footer text-center">
-               <button>Click to Verify
+               <button class="verify-btn">Click to Verify
                <i class="fa-solid fa-check"></i>
                </button>
             </div>
