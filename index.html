@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Product Verify System</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <!-- icon  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+      <!-- swiper css  -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <!-- custom css  -->
+      <link rel="stylesheet" href="assets/css/main.css">
+   </head>
+   <body>
+      <!--  begin geneuin product  -->
+      <section class="geneuin-product-container">
+         <div class="doverify-verificatoin-container">
+            <div class="doverify-verificatoin d-flex justify-content-between align-items-center pb-3 pt-4 px-3">
+               <img class="logo" src="assets/images/logo.svg" alt="doverify">
+               <button class="">
+               <!--<i class="fa-solid fa-arrow-right-long"></i>-->
+			   <img width="80" src="assets/images/logo.png" alt="doverify">
+               </button>
+            </div>
+            <div class="verify-icon mx-auto">
+               <i class="fa-solid fa-check"></i>
+            </div>
+            <h4 class="text-center text-light title-text my-3">Geneuin Product</h4>
+               <div class="product-details-container">
+                  <!-- begin nfc tag  -->
+                   <div class="nfc_tag px-5 mt-4">
+                     <div>
+                        <h4>Secure Access</h4>
+                        <p>Grants entry to secure areas; swipe or tap to unlock doors.</p>
+                     </div>
+                     <div>
+                        <h4>Tap to Pay</h4>
+                        <p>Allows contactless payment by tapping at checkout terminals.</p>
+                     </div>
+                     <div>
+                        <h4>Transit Access</h4>
+                        <p>Used for boarding public transport; tap to pay your fare.</p>
+                     </div>
+                     <div>
+                        <h4>Loyalty Points</h4>
+                        <p>Accumulates and tracks rewards for purchases; scan to earn points.</p>
+                     </div>
+                   </div>
+                  <!-- begin nfc tag  -->
+                  <div style="bottom: 59px;" class="product-details">
+                     <div class="product-detail-menu-container d-flex justify-content-between">
+                        <button onclick="productInfo()" class="product-info-menu">
+                        <i class="fa-solid fa-cube"></i>
+						
+                        <i class="fa-solid fa-angle-down arrow arrow1"></i>
+                        </button>
+                        <button onclick="productImg()" class="product-img-menu">
+                        <i class="fa-regular fa-image"></i>
+                        <i class="fa-solid fa-angle-down arrow arrow2"></i>
+                        </button>
+                        <button onclick="productLocaiton()" class="location-menu">
+                        <span class="location-icon">
+                        <i class="fa-solid fa-location-dot location"></i>
+                        </span>
+                        <i class="fa-solid fa-angle-down arrow arrow3"></i>
+                        </button>
+                        <button onclick="geneuinProductHideShowButton()" class="show-hide-btn">
+                        <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                     </div>
+                     <div class="product-detail-item px-5">
+                        <!-- begin item 1  -->
+                        <div style="display: block;" class="product-info-item1">
+                           <h5 class="pb-3 pt-3 fw-bold text-uppercase">Product Details:</h5>
+                           <div class="d-flex justify-content-between">
+                              <div class="info-name">
+                                 <p>Product Name</p>
+                                 <p>Generic </p>
+                                 <p>Batch No</p>
+                                 <p>Mfg. Date</p>
+                                 <p>Exp. Date</p>
+                                 <p>Lot No</p>
+								 <p>Marketing By</p>
+                                 <p>Mfg. By</p>
+                              </div>
+                              <div class="info">
+                                 <p>Tagrix 80 mg</p>
+                                 <p>Osimertinib</p>
+                                 <p>19102834</p>
+                                 <p> 17 August 2024</p>
+                                 <p>17 July 2026</p>
+                                 <p>001</p>
+								   <p>Beacon Mediacre Limited</p>
+                                 <p>Beacon Pharmaceutical PLC</p>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- end item 1  -->
+                        <!-- begin item 2  -->
+                        <div style="display: none;" class="product-img-item1">
+                          <!-- <h5 class="pt-3">Product Photo</h5>-->
+						   <div class="d-flex justify-content-between">
+								<h5>Product Photo</h5>
+								<a class="download-insert text-decoration-none" href="#">Download Insert <i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+						   </div>
+                           <div class="product-img-gellary">
+                              <div class="swiper Product-img-slider">
+                                 <div class="swiper-wrapper">
+                                   <div class="swiper-slide">
+                                       <img class="product-img" src="assets/images/products/tagrix-osimertinib-80.jpg" alt="product">
+                                   </div>
+                                   <div class="swiper-slide">
+                                       <img class="product-img" src="assets/images/products/tagrix-osimertinib-80.jpg" alt="product">
+                                   </div>
+                                   <div class="swiper-slide">
+                                       <img class="product-img" src="assets/images/products/tagrix-osimertinib-80.jpg" alt="product">
+                                   </div>
+                                   <div class="swiper-slide">
+                                       <img class="product-img" src="assets/images/products/tagrix-osimertinib-80.jpg" alt="product">
+                                    </div>
+                                 </div>
+                                 <div class="swiper-button-next btn-next">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                 </div>
+                                 <div class="swiper-button-prev btn-prev">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                 </div>
+                               </div>
+                           </div>
+                           <div class="d-flex justify-content-between mt-3">
+                              <div class="info-name">
+                                 <p class="mb-2">Mfg. By</p>
+                              </div>
+                              <div class="info">
+                                 <p class="mb-2">Beacon Pharmaceutical PLC</p>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- end item 2  -->
+                        <!-- begin item 3  -->
+                        <div style="display: none;" class="location-menu-item1">
+                           <h5 class="pt-3">Product Sold By</h5>
+                           <p class="text-center total-scan">Total Scan <span>3</span></p>
+                           <div class="sold">
+                        <button class="sub">
+                           <span class="sub"><span>1</span></span>
+                           <span class="sold-sold">Sold Out</span>
+                        </button>
+                           <p class="mb-2 pt-3"><b>Location:</b> Dhaka, Bangladesh</p>
+                           <p class="m-0"><b>Date:</b> 14 July 2024</p>
+                           <p class="mt-2 mb-0 pb-3"><b>IP:</b> 192.168.10.208</p>
+                        <button>
+                           <span class="sub"><span>2</span></span>
+                           <span></span>
+                        </button>
+                          <p class="mb-2 pt-3"><b>Location:</b> Dhaka, Bangladesh</p>
+                          <p class="m-0"><b>Date:</b> 14 July 2024</p>
+                          <p class="mt-2 mb-0 pb-3"><b>IP:</b> 192.168.10.208</p>
+      
+                       <button>
+                           <span class="sub"><span>3</span></span>
+                           <span></span>
+                        </button>
+                          <p class="mb-2 pt-3"><b>Location:</b> Dhaka, Bangladesh</p>
+                          <p class="m-0"><b>Date:</b> 14 July 2024</p>
+                          <p class="mt-2 mb-0 pb-3"><b>IP:</b> 192.168.10.208</p>
+                       </div>
+                        </div>
+                        <!-- end item 3  -->
+                     </div>
+                  </div>
+               </div>
+            <div class="doverify-varificaton-footer text-center">
+               <button>Click to Verify
+               <i class="fa-solid fa-check"></i>
+               </button>
+            </div>
+         </div>
+      </section>
+      <!--  end geneuin product  -->
+      <!-- begin sold   -->
+      <section class="product-sold">
+         <div class="product-sold-container">
+            <div class="doverify-verificatoin d-flex justify-content-between align-items-center pb-3 pt-4 px-3">
+               <img class="logo" src="assets/images/logo.svg" alt="doverify">
+               <button class="">
+               <i class="fa-solid fa-arrow-right-long"></i>
+               </button>
+            </div>
+            <div class="verify-icon mx-auto">
+               <i class="fa-solid fa-xmark"></i>
+            </div>
+            <h4 class="text-center custom-text-color title-text my-3 ">Sorry ! Product Already Sold</h4>
+            <div class="product-details-container">
+               <div class="nfc_tag px-5 mt-4">
+                  <div>
+                     <h4>Event Entry</h4>
+                     <p>Temporary access for guests; scan to verify and enter.</p>
+                  </div>
+                  <div>
+                     <h4>Student Card</h4>
+                     <p>Used for school identification and accessing student services.</p>
+                  </div>
+                  <div>
+                     <h4>Contact Info</h4>
+                     <p>Shares professional contact details with a tap.</p>
+                  </div>
+                  <div>
+                     <h4>Member Access</h4>
+                     <p>Manages and verifies membership status; scan to enjoy benefits.</p>
+                  </div>
+               </div>
+               <div style="bottom: 59px;" class="product-details">
+                  <div class="product-detail-menu-container d-flex justify-content-between">
+                     <button onclick="productInfo()" class="product-info-menu">
+                     <i class="fa-solid fa-cube"></i>
+                     <i class="fa-solid fa-angle-down arrow arrow1"></i>
+                     </button>
+                     <button onclick="productImg()" class="product-img-menu">
+                     <i class="fa-regular fa-image"></i>
+                     <i class="fa-solid fa-angle-down arrow arrow2"></i>
+                     </button>
+                     <button onclick="productLocaiton()" class="location-menu">
+                     <span class="location-icon">
+                     <i class="fa-solid fa-location-dot location"></i>
+                     </span>
+                     <i class="fa-solid fa-angle-down arrow arrow3"></i>
+                     </button>
+                     <button onclick="productSoldHideShowButton()" class="show-hide-btn">
+                     <i class="fa-solid fa-angle-up"></i>
+                     </button>
+                  </div>
+                  <div  class="product-detail-item px-5 mt-4">
+                     <!-- begin item 1  -->
+                     <div style="display: none;" class="product-info-item1">
+                        <h5 class="mb-4 pt-3">Product details</h5>
+                        <div class="d-flex justify-content-between">
+                           <div class="info-name">
+                              <p>PRODUCT</p>
+                              <p>BATCH</p>
+                              <p>MFG.DATE</p>
+                              <p>EXP.DATE</p>
+                              <p>LOT.NAME</p>
+                              <p>MFG.BY</p>
+                           </div>
+                           <div class="info">
+                              <p>Tagrix 80 mg</p>
+                              <p>19102834</p>
+                              <p> 17 August 2024</p>
+                              <p>17 July 2026</p>
+                              <p>001</p>
+                              <p>Beacon Pharmaceutical PLC</p>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- end item 1  -->
+                     <!-- begin item 2  -->
+                     <div style="display: none;" class="product-img-item1">
+                        <h5 class="pt-3">Product Photo</h5>
+                        <img src="assets/images/product.png" alt="product">
+                        <div class="d-flex justify-content-between">
+                           <div class="info-name">
+                              <p class="mb-2">Mfg. By</p>
+                           </div>
+                           <div class="info">
+                              <p class="mb-2">Beacon Pharmaceutical PLC</p>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- end item 2  -->
+                     <!-- begin item 3  -->
+                     <div style="display: block;" class="location-menu-item1">
+                        <h5>Product Sold By</h5>
+                        <p class="text-center total-scan">Total Scan <span>3</span></p>
+                       <div class="sold">
+                     <button class="sub">
+                        <span class="sub"><span>1</span></span>
+                        <span class="sold-sold">Sold Out</span>
+                     </button>
+                        <p class="mb-2 pt-3"><b>Location:</b> Dhaka, Bangladesh</p>
+                        <p class="m-0 border-bottom"><b>Date:</b> 14 July 2024</p>
+                        <p class="mt-2 mb-0 pb-3"><b>IP:</b> 192.168.10.208</p>
+                     <button>
+                        <span class="sub"><span>2</span></span>
+                        <span></span>
+                     </button>
+                       <p class="mb-2 pt-3"><b>Location:</b> Dhaka, Bangladesh</p>
+                       <p class="m-0 border-bottom"><b>Date:</b> 14 July 2024</p>
+                       <p class="mt-2 mb-0 pb-3"><b>IP:</b> 192.168.10.208</p>
+      
+                    <button>
+                        <span class="sub"><span>3</span></span>
+                        <span></span>
+                     </button>
+                       <p class="mb-2 pt-3"><b>Location:</b> Dhaka, Bangladesh</p>
+                       <p class="m-0 border-bottom"><b>Date:</b> 14 July 2024</p>
+                       <p class="mt-2 mb-0 pb-3"><b>IP:</b> 192.168.10.208</p>
+                    </div>
+                     </div>
+                     <!-- end item 3  -->
+                  </div>
+               </div>
+            </div>
+            <div class="doverify-varificaton-footer text-center">
+               <button>Click to Verify
+               <i class="fa-solid fa-check"></i>
+               </button>
+            </div>
+         </div>
+      </section>
+      <!-- end sold   -->
+      <!-- begin product not match  -->
+      <section class="noproduct-container">
+         <div class="no-product-container">
+            <div class="doverify-verificatoin d-flex justify-content-between align-items-center pb-3 pt-4 px-3">
+               <img class="logo" src="assets/images/logo.svg" alt="doverify">
+               <button class="">
+               <i class="fa-solid fa-arrow-right-long"></i>
+               </button>
+            </div>
+            <div style="background: none;"  class="verify-icon mx-auto">
+               <i style="color: red;" class="fa-solid fa-triangle-exclamation">
+               </i>
+            </div>
+            <h4 class="text-center custom-text-color title-text my-3 ">Sorry ! Product does't Match</h4>
+            <div class="product-details-container">
+               <!-- begin nfc tag  -->
+                <div class="nfc_tag px-5 mt-2">
+                  <div>
+                     <h4>Emergency Info</h4>
+                     <p>Provides quick access to health and safety information in emergencies.</p>
+                  </div>
+                  <div>
+                     <h4>Gift Value</h4>
+                     <p>Redeems gift card value or offers; scan to use.</p>
+                  </div>
+                  <div>
+                     <h4>Parking Access</h4>
+                     <p>Grants entry to designated parking areas; scan for access.</p>
+                  </div>
+                  <div>
+                     <h4>Room Key</h4>
+                     <p>Unlocks hotel room doors and access services; tap to enter.</p>
+                  </div>
+                  <div>
+                     <h4>Digital Coupon</h4>
+                     <p>Redeems discounts or special offers with a scan.</p>
+                  </div>
+                </div>
+               <!-- end nfc tag  -->
+               <div style="bottom: 0px;" class="product-details">
+                  <div class="product-detail-menu-container d-flex justify-content-center">
+                     <h3 class="text-center text-danger fw-bold fs-2 m-0">Contact</h3>
+                     <button onclick="noProductSoldHideShowButton()" class="show-hide-btn">
+                     <i class="fa-solid fa-angle-up"></i>
+                     </button>
+                  </div>
+                  <div class="product-detail-item px-5 py-4">
+                     <div class="d-flex gap-3 align-items-center doverify-contact">
+                        <span class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        <span>info@doverify.net</span>
+                     </div>
+                     <div class="d-flex gap-3 align-items-center doverify-contact">
+                        <span class="email">
+                        <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <span>
+                        +880 1870-84 69 94
+                        </span>
+                     </div>
+                     <div class="d-flex gap-3 align-items-center doverify-contact">
+                        <span class="email" style="width: 58px;">
+                        <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <span>Lavel 3, Orchid Plaza-2 109 Green Road, Dhaka-1215</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end product not match  -->
+      <!-- bootstrap  -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <!-- swiper js  -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <!-- custom js -->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
