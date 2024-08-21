@@ -163,6 +163,27 @@ verifyBtn.forEach(btn => {
 verifyPopupClose.addEventListener('click', () => {
   verifyPopup.style.transform ="translateX(-100%)";
 })
+// Manage verfiy with email or sms 
+const radioInput = document.querySelectorAll(".radio") ;
+const smsInput = document.querySelector(".phone-input");
+const emailInput = document.querySelector(".email-input");
 
+function handleRadioChange() {
+  if(radioInput[0].checked) {
+    smsInput.style.display ="block";
+    smsInput.focus();
+    emailInput.style.display ="none";
+  } else if (radioInput[1].checked) {
+    smsInput.style.display ="none";
+    emailInput.style.display ="block";
+    emailInput.focus();
+  }
+};
 
-
+radioInput.forEach(radio => {
+  radio.addEventListener('change', handleRadioChange);
+});
+// run the code on browser loaded 
+document.addEventListener("DOMContentLoaded", () => {
+  handleRadioChange();
+});

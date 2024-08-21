@@ -79,6 +79,7 @@ body {
   text-align: center;
   height: 243px;
   overflow-y: auto;
+  scrollbar-width: none;
 }
 .nfc_tag h4{
   font-size: 20px;
@@ -386,20 +387,26 @@ body {
   right: 0px;
   left: 0px;
   background: var(--verify-btn);
-  top: 50%;
+  top: 28%;
   text-align: center;
   padding: 15px 0px;
   transition: 0.6s ease-in-out;
   transform: translateX(-100%);
+  z-index: 100;
 }
 .checkbox {
   color: white;
 }
+.sms-checkbox label, .email-checkbox label {
+  font-size: 16px;
+  font-family: roboto;
+}
 .verify-input input {
   outline: none;
-  padding: 4px 7px;
+  padding: 10px 13px;
   border: 1px solid #b7b7b7;
-  /* display: none; */
+  font-size: 16px;
+  font-family: roboto;
 }
 .verify-popup .popup-container {
   position: relative;
@@ -409,6 +416,9 @@ body {
   top: -43px;
   right: 3px;
   background: none;
+}
+.verify-popup .popup-container .verify-popup-close-btn i {
+  color: #fff;
 }
 /* end verify popup  */
 /* responsive  */
@@ -420,7 +430,7 @@ body {
   
 }
 /* desktop screen  */
-@media (min-width: 768px) {
+@media (min-width: 932px) {
   .doverify-verificatoin-container,.no-product-container, 
   .product-sold-container {
     padding-bottom: 60px;
@@ -436,7 +446,7 @@ body {
   .product-img-gellary {
     top: 19%;
   }
-  .nfc_tag {
-    scrollbar-width: none;
+  .verify-popup {
+    top: 13%;
   }
 }

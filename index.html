@@ -179,17 +179,17 @@
                         <form action="">
                            <div class="checkbox d-flex">
                               <div class="sms-checkbox text-center w-50">
-                                 <input type="radio" id="sms" name="data">
-                              <label for="sms">SMS</label>
+                                 <input class="radio" type="radio" id="sms" name="data" checked>
+                                 <label for="sms">SMS</label>
                               </div>
                               <div class="email-checkbox text-center w-50">
-                              <input type="radio" id="email" name="data">
-                              <label for="email">EMAIL</label>
+                                 <input class="radio" type="radio" id="email" name="data">
+                                 <label for="email">EMAIL</label>
                               </div>
                            </div>
-                           <div class="verify-input d-flex my-4">
-                              <input class="phone-input w-50 mx-2" type="tel">
-                              <input class="email-input w-50 mx-2" type="email">
+                           <div class="verify-input d-flex my-4 px-5">
+                              <input class="phone-input w-100 mx-2" type="tel" placeholder="Enter Your Phone Number" autofocus>
+                              <input class="email-input w-100 mx-2" type="email" placeholder="Enter Your Email" autofocus>
                            </div>
                            <button class="px-4 py-2 border-0 rounded" type="submit">Verify</button>
                         </form>
