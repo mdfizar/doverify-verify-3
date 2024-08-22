@@ -313,7 +313,7 @@ body {
 /* end global style  */
 /* begin  product is not sold  */
 .product-sold {
-  display: none;
+  display: block;
 }
 .product-sold-container {
   height: 100vh;
@@ -341,17 +341,107 @@ body {
 .product-sold-container .sold p {
   font-size: 16px;
 }
-.product-sold-container .location-menu:hover span {
-  background-color: red;
-}
 .product-sold-container .doverify-varificaton-footer button{
  background-color: red;
 }
+/* begin location tracker  */
+.trace-details-container {
+  /* border: 1px solid rgb(255, 0, 0); */
+  padding: 10px;
+  position: relative;
+}
+.trac-details-left-border {
+  position: absolute;
+  border-left: 2px dotted gray;
+  left: 0px;
+  top: 31px;
+  bottom: 84px;
+}
+.trace-details-container .trace-details {
+  padding: 7px 0px;
+  /* border-bottom: 1px solid rgb(255, 0, 0); */
+}
+.trace-details-container>div:last-child {
+  border-bottom: 0px;
+}
+.trace-details-container .trace-details {
+  position: relative;
+}
+.trace-details-container .trace-details .trace-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  color: var(--text-color);
+  border: 3px solid var(--verify-btn);
+  font-family: roboto;
+  font-size: 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: -19px;
+  top: 11px;
+}
+.trace-details-container .trace-details 
+.trace-details-border-right {
+  width: 25px;
+  border-bottom: 2px dotted gray;
+  position: absolute;
+  left: 2px;
+  top: 21px;
+}
+.trace-details-container .trace-details .trace-address {
+  padding-left: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.trace-details-container .trace-details .trace-address h4 {
+  font-size: 20px;
+  color: var(--text-color);
+  font-family: roboto;
+  margin: 0px;
+}
+.trace-details-container .trace-details .trace-address span {
+  padding: 1px 17px;
+  background: #d14545b5;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: roboto;
+}
+.trace-details-container .trace-details .trace-date {
+  padding-left: 34px;
+}
+.trace-details-container .trace-details .trace-date p{
+  font-size: 16px;
+  font-family: roboto;
+  margin: 0px;
+  color: var(--text-color);
+  width: 50%;
+  /* text-align: center; */
+}
+.more-trace-details {
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+.trace-details-container .show-more {
+  font-size: 16px;
+  padding: 4px 15px;
+  font-family: roboto;
+  color: var(--verify-btn);
+  font-weight: 500;
+  background: none;
+  border-radius: 8px;
+}
+/* end location tracker  */
 
 /* end  product is not sold  */
 /* begin product does't match  */
 .noproduct-container {
-  display: none;
+  display: block;
   height: 100vh;
 }
 .no-product-container {

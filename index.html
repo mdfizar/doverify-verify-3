@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Product Verify System</title>
+      <title>Product Verify System3</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
       <!-- icon  -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
@@ -70,7 +70,7 @@
                         </button>
                      </div>
                      <div class="product-detail-item px-5">
-                        <!-- begin item 1  -->
+                        <!-- begin product details  -->
                         <div style="display: block;" class="product-info-item1">
                            <h5 class="pb-3 pt-3 fw-bold text-uppercase">Product Details:</h5>
                            <div class="d-flex justify-content-between">
@@ -96,14 +96,14 @@
                               </div>
                            </div>
                         </div>
-                        <!-- end item 1  -->
-                        <!-- begin item 2  -->
+                        <!-- end product details  -->
+                        <!-- begin product photo  -->
                         <div style="display: none;" class="product-img-item1">
                           <!-- <h5 class="pt-3">Product Photo</h5>-->
-						   <div class="d-flex justify-content-between">
-								<h5>Product Photo</h5>
-								<a class="download-insert text-decoration-none" href="#">Download Insert <i class="fa fa-cloud-download" aria-hidden="true"></i></a>
-						   </div>
+                           <div class="d-flex justify-content-between">
+                              <h5>Product Photo</h5>
+                              <a class="download-insert text-decoration-none" href="#">Download Insert <i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+                           </div>
                            <div class="product-img-gellary">
                               <div class="swiper Product-img-slider">
                                  <div class="swiper-wrapper">
@@ -137,37 +137,111 @@
                               </div>
                            </div>
                         </div>
-                        <!-- end item 2  -->
-                        <!-- begin item 3  -->
-                        <div style="display: none;" class="location-menu-item1">
-                           <h5 class="pt-3">Product Sold By</h5>
-                           <p class="text-center total-scan">Total Scan <span>3</span></p>
-                           <div class="sold">
-                        <button class="sub">
-                           <span class="sub"><span>1</span></span>
-                           <span class="sold-sold">Sold Out</span>
-                        </button>
-                           <p class="mb-2 pt-3"><b>Location:</b> Dhaka, Bangladesh</p>
-                           <p class="m-0"><b>Date:</b> 14 July 2024</p>
-                           <p class="mt-2 mb-0 pb-3"><b>IP:</b> 192.168.10.208</p>
-                        <button>
-                           <span class="sub"><span>2</span></span>
-                           <span></span>
-                        </button>
-                          <p class="mb-2 pt-3"><b>Location:</b> Dhaka, Bangladesh</p>
-                          <p class="m-0"><b>Date:</b> 14 July 2024</p>
-                          <p class="mt-2 mb-0 pb-3"><b>IP:</b> 192.168.10.208</p>
-      
-                       <button>
-                           <span class="sub"><span>3</span></span>
-                           <span></span>
-                        </button>
-                          <p class="mb-2 pt-3"><b>Location:</b> Dhaka, Bangladesh</p>
-                          <p class="m-0"><b>Date:</b> 14 July 2024</p>
-                          <p class="mt-2 mb-0 pb-3"><b>IP:</b> 192.168.10.208</p>
-                       </div>
+                        <!-- end product photo -->
+                        <!-- begin location tracker  -->
+                        <div style="display: none;" class="location-menu-item1 mt-4">
+                        <h5>Product Trace</h5>
+                        <p class="text-center total-scan mb-0">Total Scan <span>3</span></p>
+                           <div class="trace-details-container">
+                              <!--  begin right side border  -->
+                              <div class="trac-details-left-border"></div>
+                              <!--  end right side border  -->
+                               <!-- begin trace details -->
+                               <div class="trace-details">
+                                 <span class="trace-number">1</span>
+                                 <span class="trace-details-border-right"></span>
+                                 <div class="trace-address">
+                                    <h4>Dhaka, Bangladesh</h4>
+                                    <span>Sold</span>
+                                 </div>
+                                 <div class=" trace-date d-flex gap-3">
+                                    <p>21 Aug 2024</p>
+                                    <p class="text-end">182.143,10,3</p>
+                                 </div>
+                              </div>
+                              <!-- end trace details -->
+                              <!-- begin trace details -->
+                              <div class="trace-details">
+                                 <span class="trace-number">2</span>
+                                 <span class="trace-details-border-right"></span>
+                                 <div class="trace-address">
+                                    <h4>Kolkata, India</h4>
+                                    <span>Sold</span>
+                                 </div>
+                                 <div class=" trace-date d-flex gap-3">
+                                    <p>21 Aug 2024</p>
+                                    <p class="text-end">182.143,10,3</p>
+                                 </div>
+                              </div>
+                              <!-- end trace details -->
+                                <!-- begin trace details -->
+                              <div class="trace-details">
+                                 <span class="trace-number">3</span>
+                                 <span class="trace-details-border-right"></span>
+                                 <div class="trace-address">
+                                    <h4>Karachi, Pakistan</h4>
+                                    <span>Sold</span>
+                                 </div>
+                                 <div class=" trace-date d-flex gap-3">
+                                    <p>21 Aug 2024</p>
+                                    <p class="text-end">182.143,10,3</p>
+                                 </div>
+                              </div>
+                              <!-- end trace details -->
+                              <!-- begin more trace detals  -->
+                              <div style="height: 0px;" class="more-trace-details">
+                                 <!-- begin trace details -->
+                                 <div class="trace-details">
+                                    <span class="trace-number">4</span>
+                                    <span class="trace-details-border-right"></span>
+                                    <div class="trace-address">
+                                       <h4>Dhaka, Bangladesh</h4>
+                                       <span>Sold</span>
+                                    </div>
+                                    <div class=" trace-date d-flex gap-3">
+                                       <p>21 Aug 2024</p>
+                                       <p class="text-end">182.143,10,3</p>
+                                    </div>
+                                 </div>
+                                 <!-- end trace details -->
+                                 <!-- begin trace details -->
+                                 <div class="trace-details">
+                                    <span class="trace-number">5</span>
+                                    <span class="trace-details-border-right"></span>
+                                    <div class="trace-address">
+                                       <h4>Kolkata, India</h4>
+                                       <span>Sold</span>
+                                    </div>
+                                    <div class=" trace-date d-flex gap-3">
+                                       <p>21 Aug 2024</p>
+                                       <p class="text-end">182.143,10,3</p>
+                                    </div>
+                                 </div>
+                                 <!-- end trace details -->
+                                 <!-- begin trace details -->
+                                 <div class="trace-details">
+                                    <span class="trace-number">6</span>
+                                    <span class="trace-details-border-right"></span>
+                                    <div class="trace-address">
+                                       <h4>Karachi, Pakistan</h4>
+                                       <span>Sold</span>
+                                    </div>
+                                    <div class=" trace-date d-flex gap-3">
+                                       <p>21 Aug 2024</p>
+                                       <p class="text-end">182.143,10,3</p>
+                                    </div>
+                                 </div>
+                                 <!-- end trace details -->
+                                </div>
+                               <!-- end more trace detals  -->
+                               <!-- begin show more btn  -->
+                                 <button onclick="handleShowMoreTrace()" class="show-more border-0">
+                                    See More
+                                 </button>
+                               <!-- end show more btn  -->
+                           </div>
                         </div>
-                        <!-- end item 3  -->
+                        <!-- end location tracker  -->
                      </div>
                   </div>
                </div>
@@ -256,7 +330,7 @@
                      </button>
                   </div>
                   <div  class="product-detail-item px-5 mt-4">
-                     <!-- begin item 1  -->
+                     <!-- begin product details  -->
                      <div style="display: none;" class="product-info-item1">
                         <h5 class="mb-4 pt-3">Product details</h5>
                         <div class="d-flex justify-content-between">
@@ -278,11 +352,11 @@
                            </div>
                         </div>
                      </div>
-                     <!-- end item 1  -->
-                     <!-- begin item 2  -->
+                     <!-- product details  -->
+                     <!-- begin prouct photo  -->
                      <div style="display: none;" class="product-img-item1">
                         <h5 class="pt-3">Product Photo</h5>
-                        <img src="assets/images/product.png" alt="product">
+                        <!-- <img src="assets/images/product.png" alt="product"> -->
                         <div class="d-flex justify-content-between">
                            <div class="info-name">
                               <p class="mb-2">Mfg. By</p>
@@ -292,37 +366,111 @@
                            </div>
                         </div>
                      </div>
-                     <!-- end item 2  -->
-                     <!-- begin item 3  -->
-                     <div style="display: block;" class="location-menu-item1">
-                        <h5>Product Sold By</h5>
-                        <p class="text-center total-scan">Total Scan <span>3</span></p>
-                       <div class="sold">
-                     <button class="sub">
-                        <span class="sub"><span>1</span></span>
-                        <span class="sold-sold">Sold Out</span>
-                     </button>
-                        <p class="mb-2 pt-3"><b>Location:</b> Dhaka, Bangladesh</p>
-                        <p class="m-0 border-bottom"><b>Date:</b> 14 July 2024</p>
-                        <p class="mt-2 mb-0 pb-3"><b>IP:</b> 192.168.10.208</p>
-                     <button>
-                        <span class="sub"><span>2</span></span>
-                        <span></span>
-                     </button>
-                       <p class="mb-2 pt-3"><b>Location:</b> Dhaka, Bangladesh</p>
-                       <p class="m-0 border-bottom"><b>Date:</b> 14 July 2024</p>
-                       <p class="mt-2 mb-0 pb-3"><b>IP:</b> 192.168.10.208</p>
-      
-                    <button>
-                        <span class="sub"><span>3</span></span>
-                        <span></span>
-                     </button>
-                       <p class="mb-2 pt-3"><b>Location:</b> Dhaka, Bangladesh</p>
-                       <p class="m-0 border-bottom"><b>Date:</b> 14 July 2024</p>
-                       <p class="mt-2 mb-0 pb-3"><b>IP:</b> 192.168.10.208</p>
-                    </div>
+                     <!-- end product photo  -->
+                     <!-- begin location tracker  -->
+                     <div style="display: block;" class="location-menu-item1 mt-4">
+                        <h5>Product Trace</h5>
+                        <p class="text-center total-scan mb-0">Total Scan <span>3</span></p>
+                           <div class="trace-details-container">
+                              <!--  begin right side border  -->
+                              <div class="trac-details-left-border"></div>
+                              <!--  end right side border  -->
+                               <!-- begin trace details -->
+                               <div class="trace-details">
+                                 <span class="trace-number">1</span>
+                                 <span class="trace-details-border-right"></span>
+                                 <div class="trace-address">
+                                    <h4>Dhaka, Bangladesh</h4>
+                                    <span>Sold</span>
+                                 </div>
+                                 <div class=" trace-date d-flex gap-3">
+                                    <p>21 Aug 2024</p>
+                                    <p class="text-end">182.143,10,3</p>
+                                 </div>
+                              </div>
+                              <!-- end trace details -->
+                              <!-- begin trace details -->
+                              <div class="trace-details">
+                                 <span class="trace-number">2</span>
+                                 <span class="trace-details-border-right"></span>
+                                 <div class="trace-address">
+                                    <h4>Kolkata, India</h4>
+                                    <span>Sold</span>
+                                 </div>
+                                 <div class=" trace-date d-flex gap-3">
+                                    <p>21 Aug 2024</p>
+                                    <p class="text-end">182.143,10,3</p>
+                                 </div>
+                              </div>
+                              <!-- end trace details -->
+                                <!-- begin trace details -->
+                              <div class="trace-details">
+                                 <span class="trace-number">3</span>
+                                 <span class="trace-details-border-right"></span>
+                                 <div class="trace-address">
+                                    <h4>Karachi, Pakistan</h4>
+                                    <span>Sold</span>
+                                 </div>
+                                 <div class=" trace-date d-flex gap-3">
+                                    <p>21 Aug 2024</p>
+                                    <p class="text-end">182.143,10,3</p>
+                                 </div>
+                              </div>
+                              <!-- end trace details -->
+                              <!-- begin more trace detals  -->
+                              <div style="height: 0px;" class="more-trace-details">
+                                 <!-- begin trace details -->
+                                 <div class="trace-details">
+                                    <span class="trace-number">4</span>
+                                    <span class="trace-details-border-right"></span>
+                                    <div class="trace-address">
+                                       <h4>Dhaka, Bangladesh</h4>
+                                       <span>Sold</span>
+                                    </div>
+                                    <div class=" trace-date d-flex gap-3">
+                                       <p>21 Aug 2024</p>
+                                       <p class="text-end">182.143,10,3</p>
+                                    </div>
+                                 </div>
+                                 <!-- end trace details -->
+                                 <!-- begin trace details -->
+                                 <div class="trace-details">
+                                    <span class="trace-number">5</span>
+                                    <span class="trace-details-border-right"></span>
+                                    <div class="trace-address">
+                                       <h4>Kolkata, India</h4>
+                                       <span>Sold</span>
+                                    </div>
+                                    <div class=" trace-date d-flex gap-3">
+                                       <p>21 Aug 2024</p>
+                                       <p class="text-end">182.143,10,3</p>
+                                    </div>
+                                 </div>
+                                 <!-- end trace details -->
+                                 <!-- begin trace details -->
+                                 <div class="trace-details">
+                                    <span class="trace-number">6</span>
+                                    <span class="trace-details-border-right"></span>
+                                    <div class="trace-address">
+                                       <h4>Karachi, Pakistan</h4>
+                                       <span>Sold</span>
+                                    </div>
+                                    <div class=" trace-date d-flex gap-3">
+                                       <p>21 Aug 2024</p>
+                                       <p class="text-end">182.143,10,3</p>
+                                    </div>
+                                 </div>
+                                 <!-- end trace details -->
+                                </div>
+                               <!-- end more trace detals  -->
+                               <!-- begin show more btn  -->
+                                 <button onclick="handleShowMoreTrace()" class="show-more border-0">
+                                    See More
+                                 </button>
+                               <!-- end show more btn  -->
+                           </div>
                      </div>
-                     <!-- end item 3  -->
+                     <!-- end location tracker  -->
                   </div>
                </div>
             </div>
